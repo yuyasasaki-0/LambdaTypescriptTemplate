@@ -1,4 +1,5 @@
 module.exports = {
+  root: true,
   env: process.env.NODE_ENV === 'production'
     ? {
         node: true
@@ -16,7 +17,6 @@ module.exports = {
   },
   plugins: [
   ],
-  root: true,
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
@@ -47,6 +47,8 @@ module.exports = {
         '@typescript-eslint'
       ],
       rules: {
+        'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+        'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
         'prefer-template': 'warn'
       }
     }
