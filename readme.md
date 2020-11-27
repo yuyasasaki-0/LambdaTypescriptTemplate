@@ -15,6 +15,7 @@ This boilerplate uses these libraries:
 
 - [webpack](https://webpack.js.org/)
   - webpack extracts the dependencies of main code from node modules to deploy your code to lambda instantly and compactly.
+  - In this template, webpack compresses the index.js file and artifacts to zip package to deploy easily.
 - [ESLint](https://eslint.org/)
   - ESLint analyzes the code you write and checks the syntax and style errors.
     - In this project, we use [StandardJS](https://standardjs.com/) style.
@@ -24,4 +25,4 @@ This boilerplate uses these libraries:
 
 ## About TypeScript Settings
 
-I have set the options of typescript compiler to strict settings to reduce ambiguity and mistakes from your code.
+I have set the options of typescript compiler to strict settings, to reduce ambiguity and mistakes from your code.
